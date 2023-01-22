@@ -1,0 +1,20 @@
+.nav{
+    z-index: 10000;
+    border: 1px solid #0F1424;
+    border-radius: 100px;
+    background-color: #0F1424;
+    margin-top: 4vh;
+    height: 9vh;
+    width: 90vw;
+}
+.nav-link{
+    font-size: 22px;
+    color: white;
+}
+.nav-btn{
+    font-size: 22px;
+    width: 6vw;
+    background-color:#FFFFFF;
+    color: black; 
+    border-radius: 100px;
+}

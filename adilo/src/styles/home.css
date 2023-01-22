@@ -1,0 +1,233 @@
+/* Intro Section */
+.intro-section {
+    position: absolute;
+    top: 0%;
+    background-color: #171D31;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-package {
+    width: 40vw;
+}
+
+.intro-content {
+    margin-top: 0vh;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 57px;
+    line-height: 1;
+}
+
+.intro-subcontent {
+    margin-top: 3vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 23px;
+}
+
+.btn {
+    margin-top: 3vh;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 100px;
+}
+
+.female-doctor {
+    width: 40vw;
+    height: 85vh;
+    margin-top: 17vh;
+}
+
+/* Clinic Seciton */
+.clinic-section {
+    position: absolute;
+    top: 100vh;
+    background-color: #FFFFFF;
+    color: #171D31;
+    width: 100vw;
+    height: 100vh;
+}
+
+.clinic-package {
+    width: 50vw;
+}
+
+.clinic-content {
+    color: black;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 63px;
+    line-height: 1;
+}
+
+.clinic-subcontent {
+    color: black;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 23px;
+}
+
+.btn-2 {
+    margin-left: 5vw;
+    background-color: #171D31;
+    color: white;
+    border-radius: 100px;
+    margin-top: 3vh;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.male-doctor {
+    width: 38vw;
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+/* Care section */
+.care-section {
+    position: absolute;
+    top: 200vh;
+    background-color: #171D31;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.care-heading {
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 60px;
+}
+
+.card1 {
+    border-radius: 20px;
+    margin-left: 1vw;
+}
+
+.card2 {
+    border-radius: 20px;
+    margin-top: 30vh;
+    margin-left: 1vw;
+}
+
+.card3 {
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+.card-img-top {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+.care-btn {
+    font-size: 22px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    top: 300vh;
+    background-color: #171D31;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.footer-btn {
+    width: 90vw;
+}
+
+.footer-content {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin-bottom: 2vh;
+}
+
+.footer-subcontent {
+    margin-top: 2vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+.footer-info{
+    position: absolute;
+    bottom: 0%;
+}
+
+.footer-info-section-1 {
+    margin-left: 5vw;
+    width: 33.33vw;
+    text-align: justify;
+}
+.footer-info-section-2 {
+    width: 33.33vw;
+    text-align: justify;
+}
+.footer-info-section-3 {
+    width: 33.33vw;
+    text-align: justify;
+}
+
+.footer-info-section-2>h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+.footer-info-section-3>h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+.footer-info-section-1>p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+}
+.footer-info-section-2>p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+}
+
+.footer-info-section-3>p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .content-image {
+        display: none;
+    }
+
+    .clinic-image {
+        display: none;
+    }
+
+    .content-package {
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .clinic-package {
+        text-align: center;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, useLocation} from "react-router-dom";
+import '../styles/navbar.css' 
 
 export default function Navbar(props) {
     let location = useLocation();//useLocation is used when we want to do something when location is change for eg. from / to /about
@@ -10,10 +11,10 @@ export default function Navbar(props) {
     }
 
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "#0F1424"}}>
+        <div className='d-flex flex-row justify-content-center align-items-center'>
+            <nav className="nav navbar navbar-expand-lg navbar-dark" >
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/"><img src="" alt="Adol" width="30" height="24" className="d-inline-block align-text-top"/>Adol</Link>
+                    <Link className="navbar-brand" to="/"><img src="../images/logo.png" alt="Adol" width="120" height="55" className="d-inline-block align-text-top"/></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -30,9 +31,9 @@ export default function Navbar(props) {
                             </li>
                         </ul>
                         {!localStorage.getItem('token') ? <div className="d-flex">
-                            <Link to="/login"><button type="button" className="btn" style={{backgroundColor:"#FFFFFF",color: "black"}}>Login</button></Link>
+                            <Link to="/login"><button type="button" className="nav-btn">Login</button></Link>
                         </div>:<div className="d-flex">
-                            <Link to="/login"><button type="button" onClick={logoutHandler} className="btn" style={{backgroundColor:"#FFFFFF",color: "black"}}>Logout</button></Link>
+                            <Link to="/login"><button type="button" onClick={logoutHandler} className="nav-btn">Logout</button></Link>
                         </div>}
                     </div>
                 </div>

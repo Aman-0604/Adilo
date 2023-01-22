@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link} from 'react-router-dom';
 import '../styles/home.css';
 
 
-export default function Home(props) {
-    let navigate = useNavigate();
-
-    //   useEffect(() => {
-    //     if (localStorage.getItem('token')) {
-    //       console.log(localStorage.getItem('token'));
-    //     }
-    //     else {
-    //       navigate("/login");
-    //     }
-    //     // eslint-disable-next-line
-    //   }, [])//[]means this function will run only one time
+export default function Home() {
     return (
         <>
             <div className="intro-section d-flex flex-row justify-content-around align-items-center">
@@ -39,7 +28,7 @@ export default function Home(props) {
             </div>
             <div className="care-section d-flex flex-column justify-content-center align-items-center">
                 <div className="care-heading">WHY SHOULD YOU CARE</div>
-                <div className="care-package d-flex flex-row justify-content-center align-items-center">
+                <div className="care-package">
                     <div className="card1 card" style={{ width: "18rem" }}>
                         <img src="../images/care-1.png" className="card-img-top" alt="..." />
                         <div className="card-body">
@@ -65,15 +54,13 @@ export default function Home(props) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="footer d-flex flex-column justify-content-center align-items-center">
-                <Link to="/contact" className="footer-btn btn btn-light" style={{ border: "1px solid black" }}>
+                <Link to="/contact" className="footer-btn btn btn-light">
                     <p className='footer-subcontent'>WE ARE HERE FOR YOU</p>
                     <h1 className='footer-content'>BOOK A DEMO</h1>
                 </Link>
                 <div className="footer-info d-flex flex-row justify-content-center align-items-start">
                     <div className="footer-info-section-1 d-flex flex-column justify-content-center">
-                        <img src="../images/logo-footer.png" alt="logo-footer" style={{width:"15vw", height:"10vh"}}/>
+                        <img src="../images/logo-footer.png" alt="logo-footer" className='logo-footer-image' />
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt laboriosam animi corporis dolorum provident in iste consequatur eaque, a quia.
                     </div>
                     <div className="footer-info-section-2 d-flex flex-column justify-content-center align-items-center">

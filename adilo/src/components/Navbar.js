@@ -1,9 +1,8 @@
 import React from 'react'
-import {Link, useLocation} from "react-router-dom";
+import {Link} from "react-router-dom";
 import '../styles/navbar.css' 
 
-export default function Navbar(props) {
-    let location = useLocation();//useLocation is used when we want to do something when location is change for eg. from / to /about
+export default function Navbar() {
 
     const logoutHandler=()=>{
         localStorage.removeItem('token');
@@ -11,7 +10,7 @@ export default function Navbar(props) {
     }
 
     return (
-        <div className='d-flex flex-row justify-content-center align-items-center'>
+        <div className='navbar-main d-flex flex-row justify-content-center align-items-center'>
             <nav className="nav navbar navbar-expand-lg navbar-dark" >
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/"><img src="../images/logo.png" alt="Adol" width="120" height="55" className="d-inline-block align-text-top"/></Link>

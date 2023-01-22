@@ -49,8 +49,8 @@ export default function Login(props) {
                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                         <label className="form-check-label" htmlFor="exampleCheck1">Forgot Password</label>
                     </div>
-                    <button type="submit" className="btn btn-primary" style={{ backgroundColor: "white", color: "black" }}>Login</button>
-                    <Link to="/signup"><button type="button" className="btn" style={{ backgroundColor: "#FFFFFF", color: "black" }}>SignUp</button></Link>
+                    <button type="submit" className="btn btn-primary" style={{ backgroundColor: "white", color: "black", margin: "2vw" }}>Login</button>
+                    <Link to="/signup"><button type="button" className="btn" style={{ backgroundColor: "#FFFFFF", color: "black", margin: "2vw" }}>SignUp</button></Link>
                 </form>
             </div>
         </div>

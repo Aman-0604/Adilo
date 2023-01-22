@@ -13,7 +13,7 @@ export default function Login(props) {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://i-notebook-aman.herokuapp.com/api/auth/login", {
+        const response = await fetch("http://localhost:8000/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -23,13 +23,12 @@ export default function Login(props) {
         const json = await response.json();
         console.log(json);
         if (json.success) {
-            props.showAlert("success", "Login Successful");
             //save the auth token and redirect
             localStorage.setItem('token', json.auth_token);
             navigate("/");
         }
         else {
-            props.showAlert("danger", "Invalid Credentials");
+            console.log("Error");
         }
 
 

@@ -7,7 +7,7 @@ export default function Navbar(props) {
 
     const logoutHandler=()=>{
         localStorage.removeItem('token');
-        props.showAlert("success","Logout Successful");
+        console.log('Logout Successful');
     }
 
     return (

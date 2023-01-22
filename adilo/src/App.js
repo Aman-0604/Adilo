@@ -10,29 +10,17 @@ import {
 } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Alert from "./components/Alert";
 
 function App() {
-  const [alert, setAlert] = useState(null)
-  const showAlert = (type, display) => {
-    setAlert({
-      theme: type,
-      message: display
-    })
-    setTimeout(() => {
-      setAlert(null)
-    }, 2000);
-  }
   return (
     <BrowserRouter>
-      <Navbar showAlert={showAlert} />
-      <Alert alert={alert} />
+      <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home showAlert={showAlert} />} />
+        <Route exact path="/" element={<Home/>} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contactus />} />
-        <Route exact path="/login" element={<Login showAlert={showAlert} />} />
-        <Route exact path="/signup" element={<Signup showAlert={showAlert} />} />
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/signup" element={<Signup/>} />
       </Routes>
     </BrowserRouter>
   );

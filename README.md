@@ -1,1 +1,1 @@
-<img alt="adilo" src="./public/images/SS.png">
+<img alt="adilo" src="./adilo/public/images/SS.png">

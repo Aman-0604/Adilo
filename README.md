@@ -1,0 +1,1 @@
+<img alt="adilo" src="./public/images/SS.png">
